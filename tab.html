@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abas</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <h2>Tabs</h2>
+  <ul class="nav nav-tabs">
+    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+  </ul>
+
+  <div class="tab-content">
+    
+    <div id="menu1" class="tab-pane fade in active">
+      <table class="table table-hover">
+	<tr>
+		<th>ÍNDICE</th>
+		<th>MÊS</th>
+		<th>VALOR</th>
+	</tr>	
+
+	
+		<tr>
+			<td>IPCA</td>
+			<td>Fev.17</td>
+			<td class="valor">+0,33%</td>
+		</tr>
+
+		<tr>
+			<td>IPC-Fipe</td>
+			<td>Fev.17</td>
+			<td class="valor">+0,08%</td>
+		</tr>
+
+		<tr>
+			<td>IGP-M</td>
+			<td>Fev.17</td>
+			<td class="valor">+0,08%</td>
+		</tr>
+
+		<tr>
+			<td>INPC</td>
+			<td>Fev.17</td>
+			<td class="valor">+0,24%</td>
+		</tr>
+		
+	
+</table>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+    <div class="container">
+      <form action="" method="post">
+      <div class="form-group">
+	      	<label for="cpd">CPF:</label>
+			<input type="text" class="form-control" name="cpf" />
+		</div>
+
+		<div class="form-group">
+			<label class="coluna">Nome: </label>
+			<input type="text" class="form-control" name="nome" />
+		</div>
+
+		<div class="form-group">
+			<label class="coluna">Telefone: </label>
+			<input type="text" class="form-control" name="Telefone" />
+		</div>
+
+		<div class="form-group">
+			<label class="coluna">Email: </label>
+			<input type="text" class="form-control" name="email" />
+		</div>
+
+		<div class="form-group">
+			<label class="coluna">Data de Nascimento:	</label>
+			<input type="text" class="form-control" name="data" />
+		</div>
+
+		<input type="submit" class="btn btn-default" name="enviar" value="Enviar">
+		<input type="reset" class="btn btn-danger" name="reset" value="limpar campos">
+	</form>
+	</div>
+    </div>
+  </div>
+</div>
+
+<button type="button" class="btn btn-primary btn-ms" data-toggle="modal" data-target="#ModalCadastro">
+  Abrir modal
+</button>
+
+<div class="modal fade" id="ModalCadastro" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Formulário de Cadastro</h4>
+      </div>
+      <div class="modal-body">
+        <form action="" method="post">
+      <div class="form-group">
+	      	<label for="cpd">CPF:</label>
+			<input type="text" class="form-control" name="cpf" />
+		</div>
+
+		<div class="form-group">
+			<label class="coluna">Nome: </label>
+			<input type="text" class="form-control" name="nome" />
+		</div>
+
+		<div class="form-group">
+			<label class="coluna">Telefone: </label>
+			<input type="text" class="form-control" name="Telefone" />
+		</div>
+
+		<div class="form-group">
+			<label class="coluna">Email: </label>
+			<input type="text" class="form-control" name="email" />
+		</div>
+
+		<div class="form-group">
+			<label class="coluna">Data de Nascimento:	</label>
+			<input type="text" class="form-control" name="data" />
+		</div>
+
+		<input type="submit" class="btn btn-default" name="enviar" value="Enviar">
+		<input type="reset" class="btn btn-danger" name="reset" value="limpar campos">
+	</form>
+      </div>
+      <div class="modal-footer">
+       
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

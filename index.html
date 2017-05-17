@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<title>Usando o Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-flatly.css">
+
+	<style>	
+.navbar	{	
+		margin:	0;	
+}	
+
+.navbar	.glyphicon	{	
+		color:	yellow;	
+}	
+body	{	padding-top:	70px;	}
+</style>
+</head>
+<body>
+<div class="jumbotron">	
+		<div class="container">	
+		<nav class="navbar	navbar-inverse navbar-fixed-top">	
+
+		<div	class="navbar-header">	
+				<h1>	
+	<img	src="img/logo.png"	alt="Mirror	Fashion"	/>	
+</h1>
+<button	class="navbar-toggle"	type="button"	
+				data-target=".navbar-collapse"	data-toggle="collapse">	
+		<span	class="glyphicon	glyphicon-align-justify"></span>	
+</button>
+		</div>	
+		<ul	class="nav navbar-nav collapse	navbar-collapse">	
+				<li><a	href="sobre.php"><span	class="glyphicon	glyphicon-question-sign"></span>Sobre</a></li>	
+				<li><a	href="#"><span	class="glyphicon	glyphicon-list-alt"></span>Ajuda</a></li>	
+				<li><a	href="#"><span	class="glyphicon	glyphicon-bullhorn"></span>Perguntas	frequentes</a></li>	
+				<li><a	href="#">Entre	em	contato</a></li>	
+		</ul>	
+</nav>	
+		<div	class="row">
+			<!--	h1	e	p	que	já	tínhamos	-->	
+			<h1>Ótima	escolha!</h1>	
+			<p>Obrigado....</p>	
+
+			<div class="panel panel-sucess col-sm-4 col-lg-4 col-md-4 col-xs-12">	
+		<div	class="panel-heading">	
+				<h2	class="panel-title">Sua	compra</h2>	
+				<img class="hidden-xs" src="img/produtos/foto1-verde.png"		
+					alt="Fuzzy	Cardigan"		
+					class="img-thumbnail	img-responsive">
+					<dl>	
+						<dt>Produto</dt>	
+						<dd>Fuzzy	Cardigan</dd>	
+			
+						<dt>Cor</dt>	
+						<dd>verde</dd>	
+			
+						<dt>Tamanho</dt>	
+						<dd>40</dd>	
+			
+						<dt>Preço</dt>	
+						<dd>R$	129,00</dd>	
+					</dl>	
+		</div>	
+		<div	class="panel-body">	
+	
+				<!--	...	aqui	vai	o	<dl>	que	já	temos	hoje	...	-->	
+	
+		</div>	
+		</div>	
+
+		<form class="col-sm-8 col-md-8 col-lg-8 col-xs-12">	
+		<div class="row">
+		<fieldset class="col-md-6">	
+				<legend>Dados	pessoais</legend>	
+				<div	class="form-group">	
+				<label	for="nome">Nome	completo</label>	
+				<input	type="text"	class="form-control" id="nome" name="nome" autofocus>	
+		</div>	
+		<div	class="form-group">	
+
+				<label	for="email">Email</label>	
+				<div	class="input-group">	
+						<span	class="input-group-addon">@</span>
+				<input	type="email" class="form-control" id="email" name="email" placeholder="email@exemplo.com"> 	
+				</div>		
+		</div>	
+		<div	class="form-group">	
+				<label	for="cpf">CPF</label>	
+				<input	type="text"	class="form-control" id="cpf" name="cpf" placeholder="000.000.000-00">	
+		</div>	
+		<div	class="checkbox">	
+				<label>	
+						<input	type="checkbox"	value="sim"	name="spam"	checked>	
+						Quero	receber	spam	da	Mirror	Fashion	
+				</label>	
+		</div>	
+		</fieldset>	
+	
+		<fieldset class="col-md-8 col-lg-8">	
+				<legend>Cartão	de	crédito</legend>	
+				<div	class="form-group">	
+				<label	for="numero-cartao">Número	-	CVV</label>	
+				<input	type="text"	class="form-control"		
+											id="numero-cartao"	name="numero-cartao">	
+		</div>	
+		<div	class="form-group">	
+				<label	for="bandeira-cartao">Bandeira</label>	
+				<select	name="bandeira-cartao"	id="bandeira-cartao"	
+								class="form-control">	
+						<option	value="master">MasterCard</option>	
+						<option	value="visa">VISA</option>	
+						<option	value="amex">American	Express</option>	
+				</select>	
+		</div>	
+		<div	class="form-group">	
+				<label	for="validade-cartao">Validade</label>	
+				<input	type="month"	class="form-control"		
+											id="validade-cartao"	name="validade-cartao">	
+		</div>	
+		</fieldset>	
+		</div>
+		<button	type="submit" class="btn btn-lg btn-primary pull-right">	
+		<span	class="glyphicon	glyphicon-thumbs-up"></span>
+				Confirmar	Pedido	
+		</button>	
+</form>	
+
+
+</div>	
+
+<div	class="container">	
+		<!--	...	panel	aqui	...	-->	
+		<!-- <img class="hidden-xs" src="img/produtos/foto1-verde.png"		
+					alt="Fuzzy	Cardigan"		
+					class="img-thumbnail	img-responsive"> --> 	 	
+</div>
+</div>	
+</div>
+<script	src="js/jquery.js"></script>	
+<script	src="js/bootstrap.js"></script>
+</body>
+</html>
